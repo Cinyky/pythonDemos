@@ -1,0 +1,7 @@
+[numbers]
+
+pi : 3.1415926
+
+[messages]
+
+greeting:Welcome to learn python
