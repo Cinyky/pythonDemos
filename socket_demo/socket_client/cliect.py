@@ -1,8 +1,8 @@
-import socket
+import socket_demo
 
-s = socket.socket()
+s = socket_demo.socket()
 
-host = socket.gethostname()
+host = socket_demo.gethostname()
 port = 1111
 
 s.connect((host,port))

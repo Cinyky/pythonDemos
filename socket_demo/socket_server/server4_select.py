@@ -1,8 +1,8 @@
-import socket,select
+import socket_demo,select
 
-s= socket.socket()
+s= socket_demo.socket()
 
-host = socket.gethostname()
+host = socket_demo.gethostname()
 port = 1111
 s.bind((host,port))
 s.listen(5)
@@ -18,7 +18,7 @@ while True:
             try:
                 data = r.recv(1024)
                 disconnected = not data
-            except socket.error:
+            except socket_demo.error:
                 disconnected = True
 
             if disconnected:

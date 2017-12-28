@@ -1,11 +1,11 @@
 #! /usr/env/bin python
 # coding=utf-8
-import socket
+import socket_demo
 
 
 # Server
 def Server():
-    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock = socket_demo.socket(socket_demo.AF_INET, socket_demo.SOCK_STREAM)
     while 1:
         sock.bind(('localhost', 1236))
         sock.listen(5)  # 监听，最大链接数
